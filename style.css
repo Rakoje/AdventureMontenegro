@@ -1,0 +1,594 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+
+:root {
+    --left-bg-color: rgba(87, 84, 0, 0.7);
+    --right-bg-color: rgba(43, 43, 43, 0.8);
+    --left-hover-color: rgba(214, 213, 196, 0.5);
+    --right-hover-color: rgba(214, 213, 196, 0.5);
+    --hover-width: 55%;
+    --other-width: 45%;
+    --bg-color: black;
+    --title-font-color: white;
+}
+
+body {
+    font-family: 'Raleway';
+    margin: 0;
+    background-color: var(--bg-color);
+}
+
+.container-home {
+    width: 100%;
+    align-self: center;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+h1 {
+    color: #fff;
+    font-size: 3.5rem;
+    white-space: pre-line;
+    text-align: center;
+    font-weight: bolder;
+    transition: transform 1s ease;
+}
+
+.title {
+    text-align: center;
+    padding-top: 15px;
+    margin-bottom: 10px;
+    background-color: var(--bg-color);
+    color: var(--title-font-color);
+}
+
+
+.canyon {
+    background: linear-gradient(to bottom, black, rgba(255, 255, 255, 0.1)), url('assets/canyoning-tour.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 15rem;
+    padding-bottom: 15rem;
+    transition: opacity 1s ease;
+}
+
+.canyon:hover {
+    opacity: 0.7;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.hike {
+    background: linear-gradient(to bottom, black, rgba(255, 255, 255, 0.1)), url('assets/hike-tour.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 15rem;
+    padding-bottom: 15rem;
+    transition: opacity 1s ease;
+}
+
+
+.hike:hover {
+    opacity: 0.7;
+}
+
+@supports (-webkit-touch-callout : none) {
+    .hike-bg-image {
+        background: linear-gradient(to bottom, black, rgba(0, 0, 0, 0.1)), url('assets/hike-bg.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: scroll;
+        min-height: 600px;
+        transition: opacity 1s ease;
+    }
+
+    .hike-bg-image-2 {
+        background: linear-gradient(to bottom, black, rgba(0, 0, 0, 0.5)), url('assets/hike-bg-2.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: scroll;
+        min-height: 450px;
+        transition: opacity 1s ease;
+    }
+
+    .canyon-bg-image {
+        background: linear-gradient(to bottom, black, rgba(0, 0, 0, 0.1)), url('assets/canyon-bg-test.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: scroll;
+        min-height: 600px;
+        transition: opacity 1s ease;
+    }
+
+    .canyon-bg-image-2 {
+        background: linear-gradient(to bottom, black, rgba(0, 0, 0, 0.5)), url('assets/canyon-bg-2.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: scroll;
+        min-height: 550px;
+        transition: opacity 1s ease;
+    }
+
+    .canyon-bg-image-3 {
+        background: linear-gradient(to bottom, black, rgba(0, 0, 0, 0.5)), url('assets/canyon-bg-3.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: scroll;
+        min-height: 650px;
+        transition: opacity 1s ease;
+    }
+
+    .nevidio-bg-image {
+        background: linear-gradient(to bottom, black, rgba(0, 0, 0, 0.1)), url('assets/nevidio-bg.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: scroll;
+        min-height: 600px;
+        transition: opacity 1s ease;
+    }
+
+    .medjurijec-bg-image {
+        background: linear-gradient(to bottom, black, rgba(0, 0, 0, 0.1)), url('assets/medjurijec.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: scroll;
+        min-height: 600px;
+        transition: opacity 1s ease;
+    }
+
+    .medurijec-bg-image {
+        background: linear-gradient(to bottom, black, rgba(0, 0, 0, 0.4)), url('assets/medurijec.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: scroll;
+        min-height: 600px;
+        transition: opacity 1s ease;
+    }
+
+    .drenovstica-bg-image {
+        background: linear-gradient(to bottom, black, rgba(0, 0, 0, 0.4)), url('assets/drenovstica-bg.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: scroll;
+        min-height: 600px;
+        transition: opacity 1s ease;
+    }
+
+    .skurda2-bg-image {
+        background: linear-gradient(to bottom, black, rgba(0, 0, 0, 0.4)), url('assets/skurda-5.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: scroll;
+        min-height: 600px;
+        transition: opacity 1s ease;
+    }
+
+    footer {
+        background: linear-gradient(to bottom, black, rgba(0, 0, 0, 0.8)), url('assets/footer-bg.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: scroll;
+        padding: 15px;
+    }
+
+    .skurda-bg-image {
+        background: linear-gradient(to bottom, black, rgba(0, 0, 0, 0.4)), url('assets/skurda-6.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: scroll;
+        min-height: 600px;
+        transition: opacity 1s ease;
+    }
+
+    .drenovstica2-bg-image {
+        background: linear-gradient(to bottom, black, rgba(0, 0, 0, 0.4)), url('assets/drenovstica-3.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: scroll;
+        min-height: 600px;
+        transition: opacity 1s ease;
+    }
+}
+
+@supports not (-webkit-touch-callout : none) {
+    .hike-bg-image {
+        background: linear-gradient(to bottom, black, rgba(0, 0, 0, 0.1)), url('assets/hike-bg.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        min-height: 600px;
+        transition: opacity 1s ease;
+    }
+
+    .hike-bg-image-2 {
+        background: linear-gradient(to bottom, black, rgba(0, 0, 0, 0.5)), url('assets/hike-bg-2.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        min-height: 450px;
+        transition: opacity 1s ease;
+    }
+
+    .canyon-bg-image {
+        background: linear-gradient(to bottom, black, rgba(0, 0, 0, 0.1)), url('assets/canyon-bg-test.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        min-height: 600px;
+        transition: opacity 1s ease;
+    }
+
+    .canyon-bg-image-2 {
+        background: linear-gradient(to bottom, black, rgba(0, 0, 0, 0.5)), url('assets/canyon-bg-2.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        min-height: 600px;
+        transition: opacity 1s ease;
+    }
+
+    .canyon-bg-image-3 {
+        background: linear-gradient(to bottom, black, rgba(0, 0, 0, 0.5)), url('assets/canyon-bg-3.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        min-height: 650px;
+        transition: opacity 1s ease;
+    }
+
+    .nevidio-bg-image {
+        background: linear-gradient(to bottom, black, rgba(0, 0, 0, 0.1)), url('assets/nevidio-bg.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        min-height: 600px;
+        transition: opacity 1s ease;
+    }
+
+    .medjurijec-bg-image {
+        background: linear-gradient(to bottom, black, rgba(0, 0, 0, 0.1)), url('assets/medjurijec.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        min-height: 600px;
+        transition: opacity 1s ease;
+    }
+
+    .medurijec-bg-image {
+        background: linear-gradient(to bottom, black, rgba(0, 0, 0, 0.4)), url('assets/medurijec.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        min-height: 600px;
+        transition: opacity 1s ease;
+    }
+
+    .drenovstica-bg-image {
+        background: linear-gradient(to bottom, black, rgba(0, 0, 0, 0.4)), url('assets/drenovstica-bg.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        min-height: 600px;
+        transition: opacity 1s ease;
+    }
+
+    .skurda2-bg-image {
+        background: linear-gradient(to bottom, black, rgba(0, 0, 0, 0.4)), url('assets/skurda-5.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        min-height: 600px;
+        transition: opacity 1s ease;
+    }
+
+    footer {
+        background: linear-gradient(to bottom, black, rgba(0, 0, 0, 0.8)), url('assets/footer-bg.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        padding: 15px;
+    }
+
+    .skurda-bg-image {
+        background: linear-gradient(to bottom, black, rgba(0, 0, 0, 0.4)), url('assets/skurda-6.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        min-height: 600px;
+        transition: opacity 1s ease;
+    }
+
+    .drenovstica2-bg-image {
+        background: linear-gradient(to bottom, black, rgba(0, 0, 0, 0.4)), url('assets/drenovstica-3.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        min-height: 600px;
+        transition: opacity 1s ease;
+    }
+}
+
+
+
+.hike-bg-image .hike-content {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.hike-bg-title {
+    font-size: 4rem;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: white;
+}
+
+.hike-bg-subtitle {
+    opacity: 1;
+    margin-bottom: 30px;
+    color: white;
+    font-weight: bold;
+}
+
+
+.hike-bg-image-2 .hike-content {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.hike-bg-subtitle-2 {
+    opacity: 1;
+    margin-bottom: 30px;
+    color: white;
+    font-weight: bold;
+}
+
+.btn-hike {
+    transition: transform 1s ease;
+    border: ridge;
+}
+
+.btn-hike:hover {
+    transform: scale(1.1);
+    font-style: underline;
+}
+
+.canyon-bg-image .canyon-content {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
+.canyon-bg-title {
+    font-size: 4rem;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: white;
+}
+
+.canyon-bg-subtitle {
+    opacity: 1;
+    margin-bottom: 30px;
+    color: white;
+    font-weight: bold;
+}
+
+
+.canyon-bg-image-2 .canyon-content {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
+.canyon-bg-subtitle-2 {
+    opacity: 1;
+    margin-bottom: 30px;
+    color: white;
+    font-weight: bold;
+}
+
+.canyon-bg-image-3 .canyon-content {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
+.canyon-bg-subtitle-3 {
+    opacity: 1;
+    margin-bottom: 30px;
+    color: white;
+    font-weight: bold;
+}
+
+.canyon-bg-title-3 {
+    font-size: 4rem;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: white;
+}
+
+.back-img {
+    position: absolute;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-top: 10px;
+    margin-left: 1rem;
+    object-fit: cover;
+    border: black solid;
+    outline: white solid 0.5px;
+}
+
+.lang-img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 1rem;
+    margin-top: 10px;
+    border: black solid;
+    outline: white solid 0.5px;
+}
+
+.lang-img:hover {
+    opacity: 0.7
+}
+
+
+.lang-img-right:hover {
+    opacity: 0.7
+}
+
+.back-img:hover {
+    opacity: 0.7
+}
+
+.ig-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: black solid;
+    outline: white solid 0.5px;
+}
+
+.ig-icon:hover {
+    opacity: 0.7
+}
+
+
+.nevidio-bg-image .canyon-content {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.medjurijec-bg-image .canyon-content {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
+.medurijec-bg-image .canyon-content {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.drenovstica-bg-image .canyon-content {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.drenovstica2-bg-image .canyon-content {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.skurda-bg-image .canyon-content {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.skurda2-bg-image .canyon-content {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.footer-info {
+    padding: 5rem;
+}
+
+.logo-overlay {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    max-width: 30%;
+    z-index: 1;
+}

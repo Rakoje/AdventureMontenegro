@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property='og:title' content='Adventure Montenegro' />
+    <meta property='og:image' content='https://i.ibb.co/GPY9Dnt/logo-metadata.png' />
+    <meta property='og:description' content='A Team of guides and mountain rescuers. We organize climbing, canyoning, hiking and diving tours.' />
+    <meta property='og:url' content='https://www.adventuremontenegro.me/' />
+    <meta property='og:image:width' content='1512' />
+    <meta property='og:image:height' content='791' />
+    <!-- TYPE BELOW IS PROBABLY: 'website' or 'article' or look on https://ogp.me/#types -->
+    <meta property="og:type" content='website' />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="icon" type="image" href="assets/logo.png">
+    <title>Adventure Montenegro</title>
+</head>
+
+<body>
+    <div class="container-home">
+        <div class="col-sm-12 text-center">
+            <a href="index-rus.html"><img src="assets/russia.png" class="lang-img"></a>
+            <a href="index.html"><img src="assets/united-kingdom.png" class="lang-img"></a>
+            <a href="index-mne.html"><img src="assets/montenegro.png" class="lang-img"></a>
+        </div>
+        <div class="title col-sm-12">
+            <div style="font-size: 30px; font-weight: bolder;">
+                Adventure Montenegro</div>
+            <div>
+                A Team of guides and mountain rescuers. We organize climbing, canyoning, hiking and diving tours.
+            </div>
+        </div>
+        <div class="row">
+            <img src="assets/logo.png" alt="" class="logo-overlay">
+            <a href="canyon-index.html" onmouseover="canyon_hover()" onmouseout="canyon_over()" class="col-sm-6 canyon"
+                style="width: 100%;">
+                <h1 id="canyon-title"></h1>
+            </a>
+            <a href="hike.html" onmouseover="hike_hover()" onmouseout="hike_over()" class="col-sm-6 hike"
+                style="width: 100%;">
+                <h1 id="hike-title"></h1>
+            </a>
+        </div>
+    </div>
+    <footer class="text-center" style="color: white">
+        <div class="row">
+            <div class="col-sm-6"><img src="assets/logo.png" alt=""></div>
+            <div class="col-sm-6 footer-info">
+                <i>© Copyright 2022 Adventure Montenegro</i>&nbsp;
+                <a href="https://www.instagram.com/adventuremontenegro.me/"><img src="assets/instagram.png"
+                        class="ig-icon"></a>
+                <a href="https://www.facebook.com/profile.php?id=100064133888414"><img src="assets/facebook.png"
+                        class="ig-icon"></a><br>
+                <i>Design by Andrija Rakojevic</i>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script>
+
+        document.getElementById('hike-title').innerHTML = 'Hiking\nTour';
+        document.getElementById('canyon-title').innerHTML = 'Canyoning\nTour';
+
+    </script>
+</body>
+
+</html>
+
+
+<!--<div class="container">
+    <a href="#">
+        <div class="split left">
+            <h1 id="canyon-title"></h1>
+        </div>
+    </a>
+    <a href="#">
+        <div class="split right">
+            <h1 id="hike-title"></h1>
+        </div>
+    </a>
+</div>-->
